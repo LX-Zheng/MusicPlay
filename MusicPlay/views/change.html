@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="stylesheets/styles.css"  />
+		<link rel="stylesheet" href="stylesheets/stylec.css"  />
+		<title>PWD-Change</title>
+	</head>
+	<body>
+        <form action="/change/changefinish">
+		<div  class="logbox">
+			<div class="boxb side">
+				<div class="imgboxl"></div>
+			</div>
+			<div class="boxb mid">
+				<div class="midtitlex">ILCC</div>
+				<div class="midinputx">
+					<input class="inputboxx" type="email" name="emailinfo" placeholder="emailinfo" id="emailinfo" />
+				</div>
+				<div class="midinputx yzm">
+					<input class="inputboxx yzmm" type="text" name="textconfirm" id="textconfirm" placeholder="textconfirm" />
+                </div>
+                <!-- <div class="sendyzm">
+                    <input class="sendbtn" type="button" id="btn" value="获取验证码" />					
+                </div>	 -->
+				<div class="midinputx">
+					<input class="inputboxx" type="text" name="newPwd" id="newPwd" placeholder="新的密码" />					
+				</div>							
+				<input class="regt" type="submit" value="提交" />
+			</div>
+			<div class="boxb side">
+				<div class="imgboxr"></div>
+			</div>
+			
+			<div class="bottom">
+				<div class="botc bak"><a href="#">Back</a></div>
+				<div class="botc signlog"><a href="#">Sign in</a></div>
+			</div>			
+        </div>
+    </form>
+	</body>
+	<script type="text/javascript">
+		var wait=60;
+		function time(o){
+			if(wait==-1){
+				o.removeAttribute("disabled");
+				alue="获取验证码";
+				wait=60;
+			}else{ 
+				o.setAttribute("disabled",true);
+				o.value="重新发送("+wait+"s)";
+				wait--;
+				setTimeout(function(){
+					time(o)
+				},
+				1000)
+			}
+		}
+        document.getElementById("btn").onclick=function(){time(this);}
+        var email=document.getElementById('emailinfo')
+        var change=document.getElementById('change');
+        change.onclick=function(){
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET','/email/sendemail?'+email.value);
+        xhr.send(null);
+    }
+	</script>
+</html>
