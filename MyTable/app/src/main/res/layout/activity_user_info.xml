@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Mine.UserInfo">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/change_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" >
+        <TextView
+            android:id="@+id/change_title"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/change_user" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/user_info_image"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/user_info_border"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="@string/user_image"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="@color/font"
+            android:layout_marginLeft="20dp"/>
+        <ImageView
+            android:paddingEnd="15dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_head"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_info_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/user_info_border"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="@string/user_name"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="@color/font"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:gravity="right"
+            android:layout_marginTop="13dp"
+            android:textSize="15sp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_info_sex"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/user_info_border"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/sex"
+            android:textColor="@color/font"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/user_sex"
+            android:layout_width="40dp"
+            android:gravity="right"
+            android:layout_marginTop="13dp"
+            android:textSize="15sp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_right" />
+    </LinearLayout>
+
+
+</LinearLayout>
