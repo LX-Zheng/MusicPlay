@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">MyTable</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="login_button">登录</string>
+    <!-- 导航栏 -->
+    <string name="message">消息</string>
+    <string name="friend">联系人</string>
+    <string name="home">大厅</string>
+    <string name="mine">我的</string>
+    <!-- mine -->
+    <string name="changePwd">修改密码</string>
+    <string name="message_set">消息通知</string>
+    <string name="phone_number">手机号码</string>
+    <string name="Logout">注销</string>
+    <string name="change_pwd">个人密码修改</string>
+    <string name="checkupdate">检查更新</string>
+    <string name="about">关于</string>
+    <string name="original_password">请输入原始密码</string>
+    <string name="new_password">新密码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="finish">完成</string>
+    <string name="change_user">个人信息</string>
+    <string name="sex">性别</string>
+    <string name="user_name">昵称</string>
+    <string name="user_image">头像</string>
+    <string name="state">我的状态:</string>
+    <string name="location">我的位置</string>
+    <string name="change_state">修改状态</string>
+    <string name="my_location">定位</string>
+    <string name="footprint">足迹</string>
+    <string name="question">问题反馈</string>
+    <string name="account_set">账号设置</string>
+    <string name="exit">更改用户</string>
+
+    <!-- friend -->
+    <string name="change_name">修改备注名</string>
+    <string name="send_message">发消息</string>
+    <string name="memo_name">备注名</string>
+    <string name="history">历史搜索</string>
+    <string name="clear_history">清空历史</string>
+    <string name="search">搜索</string>
+    <string name="send_request">发送添加请求</string>
+
+    <!-- home -->
+    <string name="find">失物招领</string>
+    <string name="library">图书馆</string>
+    <string name="annouance">公告</string>
+    <string name="noinformation">暂无信息</string>
+</resources>

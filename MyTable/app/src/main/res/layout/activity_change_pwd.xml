@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Mine.ChangePwd">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" >
+        <TextView
+            android:id="@+id/change_title"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/change_pwd" />
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/original_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/original_password"
+        android:singleLine="true"
+        android:background="@null"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="15sp"
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/new_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/new_password"
+        android:singleLine="true"
+        android:background="@null"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="15sp"
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/confirm_password"
+        android:singleLine="true"
+        android:background="@null"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="15sp"
+        android:inputType="textPassword" />
+    <Button
+        android:id="@+id/finish"
+        android:background="@color/button"
+        android:layout_width="300dp"
+        android:textColor="@color/bg_white"
+        android:textSize="20sp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="@string/finish"/>
+
+</LinearLayout>

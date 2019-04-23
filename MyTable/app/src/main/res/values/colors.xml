@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="bg_white">#FFFFFF</color>
+    <color name="tab_text_blue">#1C86EE</color>
+    <color name="tab_text_normal">#8D7A71</color>
+    <color name="gray">#5B5B5B</color>
+    <!-- mine -->
+    <color name="font">#000000</color>
+    <color name="user_info">#F0F0F0</color>
+    <color name="button">#dc7610</color>
+</resources>
