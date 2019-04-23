@@ -1,0 +1,76 @@
+*{
+	padding:0;
+}
+body{
+	background:-webkit-linear-gradient(left top,#E9A2B0,#FE9A83,#FDC9A5);
+    background:-o-linear-gradient(bottom right,#E9A2B0,#FE9A83,#FDC9A5);
+    background:-moz-linear-gradient(bottom right,#E9A2B0,#FE9A83,#FDC9A5);
+    background:linear-gradient(to bottom right,#E9A2B0,#FE9A83,#FDC9A5);
+    height:100vh;
+}
+.logbox{
+	margin:100px auto;
+	width:750px;
+	height:450px;
+	background-color:#EAF1F7;
+	border:0;
+	border-radius:8px;
+	overflow:hidden;
+	box-shadow:1px 10px 200px #D63929;
+}
+.boxb{
+	height:390px;
+	float:left;
+	overflow:hidden;
+	border:0;
+}
+.side{
+	width:200px;
+}
+.mid{
+	width:350px;	
+}
+.imgboxl{
+	margin-top:90px;
+	margin-left:-50px;
+	background-image:url(/images/flower.jpg);
+	width:200px;
+	height:200px;
+	background-size:100%;
+	border:0;
+	border-radius:100px;
+	overflow:hidden;
+	box-shadow:0px 10px 50px #CCCCCC;
+}
+.imgboxr{
+	margin-top:90px;
+	margin-left:50px;
+	background-image:url(/images/snowtree.jpg);
+	width:200px;
+	height:200px;
+	background-size:100%;
+	border:0;
+	border-radius:100px;
+	overflow:hidden;
+	box-shadow:0px 10px 50px #CCCCCC;
+}
+
+#point{
+	position: absolute;
+	margin-left: 334px;
+	margin-top: -25px;
+}
+
+#level{
+	height: 20px;
+	width: 20px;
+	margin-left: 334px;
+	margin-top: -25px;
+}
+
+#emailconfirm{
+	position: absolute;
+	margin-left: 334px;
+	margin-top: -25px;
+}
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>change</title>
+</head>
+<body>
+    <form action="/change/changefinish">
+        <input type="text" name="emailinfo" id="emailinfo">
+        <input type="button" id="change" value="发送验证码">
+        <input type="text" name="textconfirm" id="textconfirm">
+        <input type="text" name="newPwd" id="newPwd" placeholder="新的密码">
+        <input type="submit">
+    </form>
+</body>
+<script>
+    var email=document.getElementById('emailinfo')
+    var change=document.getElementById('change');
+    change.onclick=function(){
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET','/email/sendemail?'+email.value);
+        xhr.send(null);
+    }
+</script>
+</html>
